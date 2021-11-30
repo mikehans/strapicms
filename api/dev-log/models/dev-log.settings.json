@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dev_logs",
+  "info": {
+    "name": "Dev Log"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

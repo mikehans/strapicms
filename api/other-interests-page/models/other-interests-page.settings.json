@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "other_interests_pages",
+  "info": {
+    "name": "Other Interests Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pageContent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.page-component"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo"
+    }
+  }
+}

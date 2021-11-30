@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/other-interests-page",
+      "handler": "other-interests-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/other-interests-page",
+      "handler": "other-interests-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/other-interests-page",
+      "handler": "other-interests-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
