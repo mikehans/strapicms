@@ -1,3 +1,5 @@
+const { sanitizeEntity } = require('strapi-utils');
+
 'use strict';
 
 /**
@@ -5,4 +7,10 @@
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+  async getPostsList(ctx){
+    let entities = await strapi.services.post.fetchPostsSummary(ctx.query);
+
+    return entities.map(entity => sanitizeEntity(entity, {model: strapi.models.post}));
+  }
+};

@@ -16,8 +16,8 @@
       "type": "string"
     },
     "posts": {
-      "collection": "post",
       "via": "categories",
+      "collection": "post",
       "dominant": true
     }
   }

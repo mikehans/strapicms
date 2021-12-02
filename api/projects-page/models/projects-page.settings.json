@@ -21,6 +21,9 @@
       "type": "component",
       "repeatable": false,
       "component": "seo.seo"
+    },
+    "menu": {
+      "model": "menu"
     }
   }
 }

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_page_menus",
+  "info": {
+    "name": "Menu",
+    "icon": "warehouse",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "menuItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.menu-item"
+    }
+  }
+}
