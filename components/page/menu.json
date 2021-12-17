@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "menuItem": {
+    "items": {
       "type": "component",
       "repeatable": true,
       "component": "page.menu-item"
