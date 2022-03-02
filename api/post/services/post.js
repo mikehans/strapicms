@@ -10,5 +10,8 @@ const { default: createStrapi } = require("strapi");
 module.exports = {
   async fetchPostsSummary(params, populate) {
     return strapi.query('post').find(params, ['title', 'description', 'published_at']);
+  },
+  async getPostBySlug(params, populate){
+    return strapi.query('post').findOne({sluggie: params});
   }
 };

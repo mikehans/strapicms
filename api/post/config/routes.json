@@ -26,8 +26,16 @@
     },
     {
       "method": "GET",
-      "path": "/posts/:id",
+      "path": "/posts/:id(\\d)",
       "handler": "post.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/posts/:sluggie",
+      "handler": "post.getBySlug",
       "config": {
         "policies": []
       }

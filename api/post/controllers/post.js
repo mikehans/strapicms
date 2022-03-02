@@ -12,5 +12,11 @@ module.exports = {
     let entities = await strapi.services.post.fetchPostsSummary(ctx.query);
 
     return entities.map(entity => sanitizeEntity(entity, {model: strapi.models.post}));
+  },
+
+  async getBySlug(ctx){
+    let entity = await strapi.services.post.getPostBySlug(ctx.params.sluggie);
+    return sanitizeEntity(entity, {model: strapi.models.post});
+
   }
 };

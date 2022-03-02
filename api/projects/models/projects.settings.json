@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "Projects",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "github": {
+      "type": "string"
+    },
+    "tags": {
+      "collection": "category",
+      "via": "project",
+      "dominant": true
+    },
+    "sluggie": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    }
+  }
+}
