@@ -5,4 +5,8 @@
  * to customize this service
  */
 
-module.exports = {};
+module.exports = {
+  async getProjectBySlug(params, populate){
+    return strapi.query('projects').findOne({sluggie: params});
+  }
+};

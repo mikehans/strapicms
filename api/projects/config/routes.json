@@ -18,8 +18,16 @@
     },
     {
       "method": "GET",
-      "path": "/projects/:id",
+      "path": "/projects/:id(\\d)",
       "handler": "projects.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projects/:sluggie",
+      "handler": "projects.getBySlug",
       "config": {
         "policies": []
       }
