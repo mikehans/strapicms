@@ -22,9 +22,8 @@
       "type": "string"
     },
     "tags": {
-      "collection": "category",
       "via": "project",
-      "dominant": true
+      "collection": "category"
     },
     "sluggie": {
       "type": "uid",

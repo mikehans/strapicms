@@ -24,6 +24,9 @@
     },
     "menu": {
       "model": "menu"
+    },
+    "projects": {
+      "collection": "projects"
     }
   }
 }
